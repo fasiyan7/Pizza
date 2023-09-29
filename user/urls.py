@@ -4,15 +4,10 @@ from django.urls import path
 from . import views
 
 
-
-
-
-
 urlpatterns = [
 #path('',views.show,name='show'),
 
-path('<int:pid>',views.index,name='pizza'),
-path('ten', views.GetTenPizzasView.as_view()),
-
+path('',views.show, name='show'),
+path('register', views.signupView),
 
 ]
