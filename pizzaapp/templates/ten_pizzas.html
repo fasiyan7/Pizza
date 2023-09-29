@@ -2,10 +2,11 @@
 {% block content %}
 <h2>Look at all the pizzas!</h2>
 <table>
-<th>
+
+<tr>
     <td>Name</td> 
     <td>Description</td>
-</th>
+</tr>
 {% for pizza in pizzas %}
 <tr>
     <td>{{ pizza.title }}</td>
